@@ -1,0 +1,1 @@
+An app to understand Go.
