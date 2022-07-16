@@ -13,7 +13,7 @@ func main() {
 	// const conferenceTickets int = 50
 	// var remainingTickets uint = 50
 
-	conferenceName := "Go Conference" // this is same as conferenceName = "Go Conference"
+	conferenceName := "Go Conference" // this is same as var conferenceName = "Go Conference"
 	const conferenceTickets int = 50  // the above method cannot be used while declaring constants
 	var remainingTickets uint = 50    // the above method connot be used  while declaring types
 
