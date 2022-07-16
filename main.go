@@ -23,11 +23,32 @@ func main() {
 	fmt.Printf("welcome to %v booking application.\n", conferenceName)
 	fmt.Printf("we have a total of %v tickets and %v are still available.\n", conferenceTickets, remainingTickets)
 
-	var userName string
+	var firstName string
+	var lastName string
+	var email string
 	var userTickets int
 
-	userName = "Jack"
-	userTickets = 2
-	fmt.Printf("Hello %v\n", userName)
-	fmt.Printf("User %v booked %v tickets.\n", userName, userTickets)
+	// userName = "Jack"
+	// userTickets = 2
+	// fmt.Printf("Hello %v\n", userName)
+	// fmt.Printf("User %v booked %v tickets.\n", userName, userTickets)
+
+	// geting user input
+	fmt.Print("Enter your first name: ")
+	fmt.Scan(&firstName) // & is used as a pointer. while iputing data from client (user), it must be pointin to memmory.
+
+	fmt.Print("Enter your last name: ")
+	fmt.Scan(&lastName)
+
+	fmt.Print("Enter your email: ")
+	fmt.Scan(&email)
+
+	fmt.Print("Enter the number of tickets you want: ")
+	fmt.Scan(&userTickets)
+
+	// displaying user input
+	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive the confirmation email at %v.\n", firstName, lastName, userTickets, email)
+	// fmt.Println(remainingTickets)
+	// fmt.Println(&remainingTickets)
+
 }
